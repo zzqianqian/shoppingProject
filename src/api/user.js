@@ -22,6 +22,13 @@ const User = {
       url: "/captcha.jpg",
       data
     });
-  }
+  },
+    home(data) {
+        return axios({
+            method: "get",
+            url: "/home",
+            data
+        });
+    }
 };
 export default User;

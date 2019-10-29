@@ -35,6 +35,18 @@
                   {price:2650.00,name:"羽绒服",code:3}
               ]
           }
+      },
+      created() {
+          this.getUserData();
+      },
+      methods:{
+          getUserData(){
+              this.api.user.home().then(res=>{
+                  console.log(res)
+              }).catch(error=>{
+                  console.log(err)
+              })
+          }
       }
   }
 </script>

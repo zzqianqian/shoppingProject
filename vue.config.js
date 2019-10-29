@@ -3,7 +3,7 @@ module.exports = {
     port: 8081,
     proxy: {
       "/javaApi": {
-        target: "http://192.168.0.193:8080/platform_framework/",
+        target: "http://192.168.0.190:9000",
         changeOrigin: true,
         ws: true,
         pathRewrite: {
